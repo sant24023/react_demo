@@ -1,7 +1,15 @@
 import React from "react";
 
-function Button({ onClickButton, label }) {
-  return <button onClick={onClickButton}>{label}</button>;
+function ButtonComp({ onClickButton, label, styleName }) {
+  return (
+    <button
+      className={styleName}
+      onClick={onClickButton}
+      
+    >
+      {label}
+    </button>
+  );
 }
 
-export default Button;
+export default ButtonComp;
